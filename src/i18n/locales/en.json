@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "vault": "Vault",
+    "policies": "Policies",
+    "budget": "Privacy Budget",
+    "personas": "Personas",
+    "deadManSwitch": "Dead Man Switch",
+    "forensics": "Forensics",
+    "reverseDisclosure": "Reverse Disclosure",
+    "audit": "Audit",
+    "consents": "Consent Receipts",
+    "reputation": "Agent Reputation",
+    "demo": "Demo",
+    "scenarios": "Scenarios",
+    "agentDemo": "Agent Demo",
+    "sdkPlayground": "SDK Playground",
+    "settings": "Settings"
+  },
+  "landing": {
+    "hero": {
+      "title": "Your Data. Your Rules.",
+      "subtitle": "Take control of your digital identity with military-grade encryption and zero-knowledge architecture",
+      "cta": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Why ShadowKey?",
+      "vault": {
+        "title": "Encrypted Vault",
+        "description": "Your secrets are encrypted client-side before storage"
+      },
+      "policies": {
+        "title": "Smart Policies",
+        "description": "Fine-grained control over who accesses what data"
+      },
+      "budget": {
+        "title": "Privacy Budget",
+        "description": "Rate limits and spending controls per category"
+      },
+      "forensics": {
+        "title": "Forensic Auditing",
+        "description": "Track every disclosure with cryptographic receipts"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Connect Wallet",
+        "description": "Use MetaMask to create your secure vault"
+      },
+      "step2": {
+        "title": "Store Secrets",
+        "description": "Add encrypted data by category"
+      },
+      "step3": {
+        "title": "Create Policies",
+        "description": "Define who can access what"
+      },
+      "step4": {
+        "title": "Stay Secure",
+        "description": "Monitor all activity in real-time"
+      }
+    },
+    "cta": {
+      "title": "Ready to Take Control?",
+      "description": "Join thousands protecting their digital identity",
+      "button": "Start Now"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Your privacy command center",
+    "vaultStatus": {
+      "title": "Vault Status",
+      "active": "Active",
+      "locked": "Locked"
+    },
+    "stats": {
+      "secrets": "Secrets",
+      "policies": "Policies",
+      "disclosures": "Disclosures",
+      "agents": "Agents"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "noActivity": "No recent activity"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "addSecret": "Add Secret",
+      "createPolicy": "Create Policy",
+      "viewAudit": "View Audit Log",
+      "emergencyLockdown": "Emergency Lockdown"
+    }
+  },
+  "vault": {
+    "title": "Vault",
+    "subtitle": "Your encrypted data store",
+    "categories": {
+      "all": "All Categories",
+      "payment": "Payment",
+      "identity": "Identity",
+      "credentials": "Credentials",
+      "health": "Health",
+      "preferences": "Preferences"
+    },
+    "addSecret": "Add Secret",
+    "noSecrets": "No secrets stored yet",
+    "secretAdded": "Secret added successfully",
+    "secretDeleted": "Secret deleted successfully"
+  },
+  "policies": {
+    "title": "Policies",
+    "subtitle": "Manage agent access permissions",
+    "createPolicy": "Create Policy",
+    "noPolicies": "No policies created yet",
+    "policyCreated": "Policy created successfully",
+    "policyUpdated": "Policy updated successfully",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "expired": "Expired"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Customize your experience",
+    "language": {
+      "title": "Language",
+      "description": "Choose your preferred language"
+    },
+    "theme": {
+      "title": "Theme",
+      "description": "Switch between light and dark mode",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Manage notification preferences"
+    },
+    "saved": "Settings saved successfully"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "walletConnected": "Wallet connected",
+    "walletDisconnected": "Wallet disconnected",
+    "pleaseConnectWallet": "Please connect your wallet first"
+  }
+}

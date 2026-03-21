@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "Panel",
+    "vault": "Bóveda",
+    "policies": "Políticas",
+    "budget": "Presupuesto de Privacidad",
+    "personas": "Personas",
+    "deadManSwitch": "Interruptor de Seguridad",
+    "forensics": "Forense",
+    "reverseDisclosure": "Divulgación Inversa",
+    "audit": "Auditoría",
+    "consents": "Recibos de Consentimiento",
+    "reputation": "Reputación del Agente",
+    "demo": "Demo",
+    "scenarios": "Escenarios",
+    "agentDemo": "Demo del Agente",
+    "sdkPlayground": "SDK Playground",
+    "settings": "Ajustes"
+  },
+  "landing": {
+    "hero": {
+      "title": "Tus Datos. Tus Reglas.",
+      "subtitle": "Toma el control de tu identidad digital con cifrado de grado militar y arquitectura de conocimiento cero",
+      "cta": "Comenzar",
+      "learnMore": "Saber Más"
+    },
+    "features": {
+      "title": "¿Por qué ShadowKey?",
+      "vault": {
+        "title": "Bóveda Cifrada",
+        "description": "Tus secretos se cifran del lado del cliente antes del almacenamiento"
+      },
+      "policies": {
+        "title": "Políticas Inteligentes",
+        "description": "Control detallado sobre quién accede a qué datos"
+      },
+      "budget": {
+        "title": "Presupuesto de Privacidad",
+        "description": "Límites de tasa y controles de gasto por categoría"
+      },
+      "forensics": {
+        "title": "Auditoría Forense",
+        "description": "Rastrea cada divulgación con recibos criptográficos"
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "step1": {
+        "title": "Conectar Cartera",
+        "description": "Usa MetaMask para crear tu bóveda segura"
+      },
+      "step2": {
+        "title": "Almacenar Secretos",
+        "description": "Agrega datos cifrados por categoría"
+      },
+      "step3": {
+        "title": "Crear Políticas",
+        "description": "Define quién puede acceder a qué"
+      },
+      "step4": {
+        "title": "Mantente Seguro",
+        "description": "Monitorea toda la actividad en tiempo real"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Tomar el Control?",
+      "description": "Únete a miles protegiendo su identidad digital",
+      "button": "Comenzar Ahora"
+    }
+  },
+  "dashboard": {
+    "title": "Panel",
+    "subtitle": "Tu centro de comando de privacidad",
+    "vaultStatus": {
+      "title": "Estado de la Bóveda",
+      "active": "Activo",
+      "locked": "Bloqueado"
+    },
+    "stats": {
+      "secrets": "Secretos",
+      "policies": "Políticas",
+      "disclosures": "Divulgaciones",
+      "agents": "Agentes"
+    },
+    "recentActivity": {
+      "title": "Actividad Reciente",
+      "noActivity": "Sin actividad reciente"
+    },
+    "quickActions": {
+      "title": "Acciones Rápidas",
+      "addSecret": "Agregar Secreto",
+      "createPolicy": "Crear Política",
+      "viewAudit": "Ver Registro de Auditoría",
+      "emergencyLockdown": "Bloqueo de Emergencia"
+    }
+  },
+  "vault": {
+    "title": "Bóveda",
+    "subtitle": "Tu almacén de datos cifrados",
+    "categories": {
+      "all": "Todas las Categorías",
+      "payment": "Pago",
+      "identity": "Identidad",
+      "credentials": "Credenciales",
+      "health": "Salud",
+      "preferences": "Preferencias"
+    },
+    "addSecret": "Agregar Secreto",
+    "noSecrets": "Aún no hay secretos almacenados",
+    "secretAdded": "Secreto agregado exitosamente",
+    "secretDeleted": "Secreto eliminado exitosamente"
+  },
+  "policies": {
+    "title": "Políticas",
+    "subtitle": "Gestionar permisos de acceso de agentes",
+    "createPolicy": "Crear Política",
+    "noPolicies": "Aún no hay políticas creadas",
+    "policyCreated": "Política creada exitosamente",
+    "policyUpdated": "Política actualizada exitosamente",
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "expired": "Expirado"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Personaliza tu experiencia",
+    "language": {
+      "title": "Idioma",
+      "description": "Elige tu idioma preferido"
+    },
+    "theme": {
+      "title": "Tema",
+      "description": "Cambia entre modo claro y oscuro",
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "description": "Gestionar preferencias de notificación"
+    },
+    "saved": "Ajustes guardados exitosamente"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "walletConnected": "Cartera conectada",
+    "walletDisconnected": "Cartera desconectada",
+    "pleaseConnectWallet": "Por favor conecta tu cartera primero"
+  }
+}

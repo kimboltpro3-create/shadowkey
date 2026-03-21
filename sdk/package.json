@@ -1,0 +1,47 @@
+{
+  "name": "shadowkey-agent-sdk",
+  "version": "1.2.0",
+  "description": "Official SDK for integrating AI agents with ShadowKey privacy vault",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "shadowkey",
+    "privacy",
+    "ai-agent",
+    "data-vault",
+    "zero-knowledge"
+  ],
+  "author": "ShadowKey Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimboltpro3-create/shadowkey"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.3",
+    "vitest": "^1.0.0"
+  }
+}

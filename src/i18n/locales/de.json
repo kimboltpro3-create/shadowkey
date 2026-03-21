@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "vault": "Tresor",
+    "policies": "Richtlinien",
+    "budget": "Datenschutzbudget",
+    "personas": "Personas",
+    "deadManSwitch": "Totmannschalter",
+    "forensics": "Forensik",
+    "reverseDisclosure": "Umgekehrte Offenlegung",
+    "audit": "Audit",
+    "consents": "Einwilligungsbelege",
+    "reputation": "Agenten-Reputation",
+    "demo": "Demo",
+    "scenarios": "Szenarien",
+    "agentDemo": "Agenten-Demo",
+    "sdkPlayground": "SDK Playground",
+    "settings": "Einstellungen"
+  },
+  "landing": {
+    "hero": {
+      "title": "Ihre Daten. Ihre Regeln.",
+      "subtitle": "Übernehmen Sie die Kontrolle über Ihre digitale Identität mit militärischer Verschlüsselung und Zero-Knowledge-Architektur",
+      "cta": "Loslegen",
+      "learnMore": "Mehr Erfahren"
+    },
+    "features": {
+      "title": "Warum ShadowKey?",
+      "vault": {
+        "title": "Verschlüsselter Tresor",
+        "description": "Ihre Geheimnisse werden clientseitig vor der Speicherung verschlüsselt"
+      },
+      "policies": {
+        "title": "Intelligente Richtlinien",
+        "description": "Feinkörnige Kontrolle darüber, wer auf welche Daten zugreift"
+      },
+      "budget": {
+        "title": "Datenschutzbudget",
+        "description": "Ratenlimits und Ausgabenkontrollen pro Kategorie"
+      },
+      "forensics": {
+        "title": "Forensische Prüfung",
+        "description": "Verfolgen Sie jede Offenlegung mit kryptographischen Belegen"
+      }
+    },
+    "howItWorks": {
+      "title": "So Funktioniert Es",
+      "step1": {
+        "title": "Wallet Verbinden",
+        "description": "Verwenden Sie MetaMask, um Ihren sicheren Tresor zu erstellen"
+      },
+      "step2": {
+        "title": "Geheimnisse Speichern",
+        "description": "Fügen Sie verschlüsselte Daten nach Kategorie hinzu"
+      },
+      "step3": {
+        "title": "Richtlinien Erstellen",
+        "description": "Definieren Sie, wer auf was zugreifen kann"
+      },
+      "step4": {
+        "title": "Sicher Bleiben",
+        "description": "Überwachen Sie alle Aktivitäten in Echtzeit"
+      }
+    },
+    "cta": {
+      "title": "Bereit, die Kontrolle zu Übernehmen?",
+      "description": "Schließen Sie sich Tausenden an, die ihre digitale Identität schützen",
+      "button": "Jetzt Starten"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Ihr Datenschutz-Kommandozentrum",
+    "vaultStatus": {
+      "title": "Tresorstatus",
+      "active": "Aktiv",
+      "locked": "Gesperrt"
+    },
+    "stats": {
+      "secrets": "Geheimnisse",
+      "policies": "Richtlinien",
+      "disclosures": "Offenlegungen",
+      "agents": "Agenten"
+    },
+    "recentActivity": {
+      "title": "Letzte Aktivität",
+      "noActivity": "Keine aktuelle Aktivität"
+    },
+    "quickActions": {
+      "title": "Schnellaktionen",
+      "addSecret": "Geheimnis Hinzufügen",
+      "createPolicy": "Richtlinie Erstellen",
+      "viewAudit": "Audit-Protokoll Anzeigen",
+      "emergencyLockdown": "Notfall-Sperrung"
+    }
+  },
+  "vault": {
+    "title": "Tresor",
+    "subtitle": "Ihr verschlüsselter Datenspeicher",
+    "categories": {
+      "all": "Alle Kategorien",
+      "payment": "Zahlung",
+      "identity": "Identität",
+      "credentials": "Anmeldedaten",
+      "health": "Gesundheit",
+      "preferences": "Präferenzen"
+    },
+    "addSecret": "Geheimnis Hinzufügen",
+    "noSecrets": "Noch keine Geheimnisse gespeichert",
+    "secretAdded": "Geheimnis erfolgreich hinzugefügt",
+    "secretDeleted": "Geheimnis erfolgreich gelöscht"
+  },
+  "policies": {
+    "title": "Richtlinien",
+    "subtitle": "Agenten-Zugriffsberechtigungen verwalten",
+    "createPolicy": "Richtlinie Erstellen",
+    "noPolicies": "Noch keine Richtlinien erstellt",
+    "policyCreated": "Richtlinie erfolgreich erstellt",
+    "policyUpdated": "Richtlinie erfolgreich aktualisiert",
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "expired": "Abgelaufen"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Passen Sie Ihre Erfahrung an",
+    "language": {
+      "title": "Sprache",
+      "description": "Wählen Sie Ihre bevorzugte Sprache"
+    },
+    "theme": {
+      "title": "Design",
+      "description": "Zwischen hellem und dunklem Modus wechseln",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "notifications": {
+      "title": "Benachrichtigungen",
+      "description": "Benachrichtigungseinstellungen verwalten"
+    },
+    "saved": "Einstellungen erfolgreich gespeichert"
+  },
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "walletConnected": "Wallet verbunden",
+    "walletDisconnected": "Wallet getrennt",
+    "pleaseConnectWallet": "Bitte verbinden Sie zuerst Ihr Wallet"
+  }
+}

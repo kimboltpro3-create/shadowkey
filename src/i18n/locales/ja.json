@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "vault": "保管庫",
+    "policies": "ポリシー",
+    "budget": "プライバシー予算",
+    "personas": "ペルソナ",
+    "deadManSwitch": "デッドマンスイッチ",
+    "forensics": "フォレンジック",
+    "reverseDisclosure": "逆開示",
+    "audit": "監査",
+    "consents": "同意証明",
+    "reputation": "エージェント評判",
+    "demo": "デモ",
+    "scenarios": "シナリオ",
+    "agentDemo": "エージェントデモ",
+    "sdkPlayground": "SDK プレイグラウンド",
+    "settings": "設定"
+  },
+  "landing": {
+    "hero": {
+      "title": "あなたのデータ。あなたのルール。",
+      "subtitle": "軍用グレードの暗号化とゼロ知識アーキテクチャでデジタルアイデンティティを管理",
+      "cta": "始める",
+      "learnMore": "詳細を見る"
+    },
+    "features": {
+      "title": "なぜ ShadowKey？",
+      "vault": {
+        "title": "暗号化保管庫",
+        "description": "秘密は保存前にクライアント側で暗号化されます"
+      },
+      "policies": {
+        "title": "スマートポリシー",
+        "description": "誰が何のデータにアクセスするかの細かい制御"
+      },
+      "budget": {
+        "title": "プライバシー予算",
+        "description": "カテゴリごとのレート制限と支出管理"
+      },
+      "forensics": {
+        "title": "フォレンジック監査",
+        "description": "暗号証明書ですべての開示を追跡"
+      }
+    },
+    "howItWorks": {
+      "title": "仕組み",
+      "step1": {
+        "title": "ウォレット接続",
+        "description": "MetaMask を使用して安全な保管庫を作成"
+      },
+      "step2": {
+        "title": "秘密を保存",
+        "description": "カテゴリ別に暗号化データを追加"
+      },
+      "step3": {
+        "title": "ポリシー作成",
+        "description": "誰が何にアクセスできるかを定義"
+      },
+      "step4": {
+        "title": "安全を維持",
+        "description": "すべてのアクティビティをリアルタイムで監視"
+      }
+    },
+    "cta": {
+      "title": "コントロールを取る準備はできましたか？",
+      "description": "デジタルアイデンティティを保護する何千人もの仲間に参加",
+      "button": "今すぐ始める"
+    }
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "subtitle": "プライバシーコマンドセンター",
+    "vaultStatus": {
+      "title": "保管庫ステータス",
+      "active": "アクティブ",
+      "locked": "ロック済み"
+    },
+    "stats": {
+      "secrets": "秘密",
+      "policies": "ポリシー",
+      "disclosures": "開示",
+      "agents": "エージェント"
+    },
+    "recentActivity": {
+      "title": "最近のアクティビティ",
+      "noActivity": "最近のアクティビティはありません"
+    },
+    "quickActions": {
+      "title": "クイックアクション",
+      "addSecret": "秘密を追加",
+      "createPolicy": "ポリシーを作成",
+      "viewAudit": "監査ログを表示",
+      "emergencyLockdown": "緊急ロックダウン"
+    }
+  },
+  "vault": {
+    "title": "保管庫",
+    "subtitle": "暗号化データストレージ",
+    "categories": {
+      "all": "すべてのカテゴリ",
+      "payment": "支払い",
+      "identity": "アイデンティティ",
+      "credentials": "資格情報",
+      "health": "健康",
+      "preferences": "設定"
+    },
+    "addSecret": "秘密を追加",
+    "noSecrets": "まだ秘密が保存されていません",
+    "secretAdded": "秘密が正常に追加されました",
+    "secretDeleted": "秘密が正常に削除されました"
+  },
+  "policies": {
+    "title": "ポリシー",
+    "subtitle": "エージェントアクセス権限を管理",
+    "createPolicy": "ポリシーを作成",
+    "noPolicies": "まだポリシーが作成されていません",
+    "policyCreated": "ポリシーが正常に作成されました",
+    "policyUpdated": "ポリシーが正常に更新されました",
+    "status": {
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "expired": "期限切れ"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "subtitle": "エクスペリエンスをカスタマイズ",
+    "language": {
+      "title": "言語",
+      "description": "優先言語を選択"
+    },
+    "theme": {
+      "title": "テーマ",
+      "description": "ライトモードとダークモードを切り替え",
+      "light": "ライト",
+      "dark": "ダーク"
+    },
+    "notifications": {
+      "title": "通知",
+      "description": "通知設定を管理"
+    },
+    "saved": "設定が正常に保存されました"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "confirm": "確認",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "walletConnected": "ウォレット接続済み",
+    "walletDisconnected": "ウォレット切断済み",
+    "pleaseConnectWallet": "まずウォレットを接続してください"
+  }
+}

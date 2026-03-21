@@ -1,0 +1,26 @@
+[api]
+port = 54321
+
+[db]
+port = 54322
+
+[studio]
+port = 54323
+
+[functions.dead-man-switch-cron]
+verify_jwt = false
+
+[functions.access-request]
+verify_jwt = false
+
+[functions.sdk-access-request]
+verify_jwt = false
+
+[functions.sdk-access-status]
+verify_jwt = false
+
+[functions.reverse-disclosure]
+verify_jwt = false
+
+[functions.simulate-receipt]
+verify_jwt = false

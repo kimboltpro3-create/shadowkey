@@ -1,0 +1,104 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true,  "internalType": "address", "name": "agentAddress", "type": "address" },
+      { "indexed": false, "internalType": "uint8",   "name": "trustScore",   "type": "uint8"   },
+      { "indexed": false, "internalType": "bool",    "name": "trusted",      "type": "bool"    },
+      { "indexed": false, "internalType": "uint64",  "name": "timestamp",    "type": "uint64"  }
+    ],
+    "name": "AgentAttested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true,  "internalType": "address", "name": "agentAddress", "type": "address" },
+      { "indexed": false, "internalType": "uint64",  "name": "timestamp",    "type": "uint64"  }
+    ],
+    "name": "AgentRevoked",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "agentAddress", "type": "address" },
+      { "internalType": "uint8",   "name": "trustScore",   "type": "uint8"   }
+    ],
+    "name": "attest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "agentAddress", "type": "address" }
+    ],
+    "name": "revoke",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "agent", "type": "address" }
+    ],
+    "name": "getAttestation",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "agentAddress", "type": "address" },
+          { "internalType": "uint8",   "name": "trustScore",   "type": "uint8"   },
+          { "internalType": "uint64",  "name": "timestamp",    "type": "uint64"  },
+          { "internalType": "bool",    "name": "trusted",      "type": "bool"    }
+        ],
+        "internalType": "struct ShadowKeyAttestation.Attestation",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "agent", "type": "address" }
+    ],
+    "name": "isTrusted",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "attestationCount",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "name": "attestations",
+    "outputs": [
+      { "internalType": "address", "name": "agentAddress", "type": "address" },
+      { "internalType": "uint8",   "name": "trustScore",   "type": "uint8"   },
+      { "internalType": "uint64",  "name": "timestamp",    "type": "uint64"  },
+      { "internalType": "bool",    "name": "trusted",      "type": "bool"    }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

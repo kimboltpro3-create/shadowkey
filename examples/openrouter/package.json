@@ -1,0 +1,12 @@
+{
+  "name": "shadowkey-openrouter-example",
+  "version": "1.1.0",
+  "description": "Example AI agent using OpenRouter free models with ShadowKey SDK",
+  "type": "module",
+  "scripts": {
+    "start": "node shopping-agent.js"
+  },
+  "dependencies": {
+    "shadowkey-agent-sdk": "^1.1.0"
+  }
+}

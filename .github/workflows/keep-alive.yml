@@ -1,0 +1,20 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Every day at 8:00 AM UTC
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase edge function
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -d '{"scenario":"health","fields":{}}' \
+            https://sktkgjqapzfddkdmwdoi.supabase.co/functions/v1/simulate-receipt
+          echo " — Supabase pinged"

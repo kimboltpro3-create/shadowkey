@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "Tableau de Bord",
+    "vault": "Coffre-fort",
+    "policies": "Politiques",
+    "budget": "Budget de Confidentialité",
+    "personas": "Personas",
+    "deadManSwitch": "Commutateur de Sécurité",
+    "forensics": "Forensique",
+    "reverseDisclosure": "Divulgation Inversée",
+    "audit": "Audit",
+    "consents": "Reçus de Consentement",
+    "reputation": "Réputation de l'Agent",
+    "demo": "Démo",
+    "scenarios": "Scénarios",
+    "agentDemo": "Démo de l'Agent",
+    "sdkPlayground": "SDK Playground",
+    "settings": "Paramètres"
+  },
+  "landing": {
+    "hero": {
+      "title": "Vos Données. Vos Règles.",
+      "subtitle": "Prenez le contrôle de votre identité numérique avec un chiffrement de niveau militaire et une architecture à connaissance nulle",
+      "cta": "Commencer",
+      "learnMore": "En Savoir Plus"
+    },
+    "features": {
+      "title": "Pourquoi ShadowKey?",
+      "vault": {
+        "title": "Coffre-fort Chiffré",
+        "description": "Vos secrets sont chiffrés côté client avant le stockage"
+      },
+      "policies": {
+        "title": "Politiques Intelligentes",
+        "description": "Contrôle précis sur qui accède à quelles données"
+      },
+      "budget": {
+        "title": "Budget de Confidentialité",
+        "description": "Limites de taux et contrôles de dépenses par catégorie"
+      },
+      "forensics": {
+        "title": "Audit Forensique",
+        "description": "Suivez chaque divulgation avec des reçus cryptographiques"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment Ça Marche",
+      "step1": {
+        "title": "Connecter le Portefeuille",
+        "description": "Utilisez MetaMask pour créer votre coffre-fort sécurisé"
+      },
+      "step2": {
+        "title": "Stocker des Secrets",
+        "description": "Ajoutez des données chiffrées par catégorie"
+      },
+      "step3": {
+        "title": "Créer des Politiques",
+        "description": "Définissez qui peut accéder à quoi"
+      },
+      "step4": {
+        "title": "Restez Sécurisé",
+        "description": "Surveillez toute l'activité en temps réel"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Prendre le Contrôle?",
+      "description": "Rejoignez des milliers de personnes protégeant leur identité numérique",
+      "button": "Commencer Maintenant"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "subtitle": "Votre centre de commande de confidentialité",
+    "vaultStatus": {
+      "title": "État du Coffre-fort",
+      "active": "Actif",
+      "locked": "Verrouillé"
+    },
+    "stats": {
+      "secrets": "Secrets",
+      "policies": "Politiques",
+      "disclosures": "Divulgations",
+      "agents": "Agents"
+    },
+    "recentActivity": {
+      "title": "Activité Récente",
+      "noActivity": "Aucune activité récente"
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "addSecret": "Ajouter un Secret",
+      "createPolicy": "Créer une Politique",
+      "viewAudit": "Voir le Journal d'Audit",
+      "emergencyLockdown": "Verrouillage d'Urgence"
+    }
+  },
+  "vault": {
+    "title": "Coffre-fort",
+    "subtitle": "Votre stockage de données chiffrées",
+    "categories": {
+      "all": "Toutes les Catégories",
+      "payment": "Paiement",
+      "identity": "Identité",
+      "credentials": "Identifiants",
+      "health": "Santé",
+      "preferences": "Préférences"
+    },
+    "addSecret": "Ajouter un Secret",
+    "noSecrets": "Aucun secret stocké pour le moment",
+    "secretAdded": "Secret ajouté avec succès",
+    "secretDeleted": "Secret supprimé avec succès"
+  },
+  "policies": {
+    "title": "Politiques",
+    "subtitle": "Gérer les autorisations d'accès des agents",
+    "createPolicy": "Créer une Politique",
+    "noPolicies": "Aucune politique créée pour le moment",
+    "policyCreated": "Politique créée avec succès",
+    "policyUpdated": "Politique mise à jour avec succès",
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "expired": "Expiré"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Personnalisez votre expérience",
+    "language": {
+      "title": "Langue",
+      "description": "Choisissez votre langue préférée"
+    },
+    "theme": {
+      "title": "Thème",
+      "description": "Basculer entre mode clair et sombre",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Gérer les préférences de notification"
+    },
+    "saved": "Paramètres enregistrés avec succès"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "walletConnected": "Portefeuille connecté",
+    "walletDisconnected": "Portefeuille déconnecté",
+    "pleaseConnectWallet": "Veuillez d'abord connecter votre portefeuille"
+  }
+}

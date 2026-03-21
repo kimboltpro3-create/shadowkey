@@ -1,0 +1,18 @@
+{
+  "name": "shadowkey-claude-sdk-example",
+  "version": "1.0.0",
+  "description": "Claude AI agents with ShadowKey privacy vault — tool_use and travel examples",
+  "type": "module",
+  "main": "travel-agent.js",
+  "scripts": {
+    "start": "node travel-agent.js",
+    "shopping": "node claude-agent.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "shadowkey-agent-sdk": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

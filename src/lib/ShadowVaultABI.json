@@ -1,0 +1,664 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerDay",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerWeek",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "maxSpendPerDay",
+        "type": "uint96"
+      }
+    ],
+    "name": "BudgetUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "agentAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "serviceAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "amount",
+        "type": "uint96"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "detailsHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "DisclosureLogged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "policiesRevoked",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      }
+    ],
+    "name": "EmergencyLockdown",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "LockdownLifted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "agentAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "spendLimit",
+        "type": "uint96"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "totalLimit",
+        "type": "uint96"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "expiresAt",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "detailsHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "PolicyRegistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "agentAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "PolicyRevoked",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "name": "budgets",
+    "outputs": [
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerDay",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerWeek",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxUniqueServices",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint96",
+        "name": "maxSpendPerDay",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint8",
+        "name": "alertThresholdPct",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "name": "disclosureCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      }
+    ],
+    "name": "emergencyLockdown",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      }
+    ],
+    "name": "getBudget",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum ShadowVault.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxDisclosuresPerDay",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxDisclosuresPerWeek",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxUniqueServices",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint96",
+            "name": "maxSpendPerDay",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint8",
+            "name": "alertThresholdPct",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ShadowVault.OnChainBudget",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPolicy",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "policyId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "agentAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum ShadowVault.Category",
+            "name": "category",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint96",
+            "name": "spendLimit",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "totalLimit",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "totalSpent",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiresAt",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "detailsHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ShadowVault.OnChainPolicy",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPolicyCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isLockedDown",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liftLockdown",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockedDown",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "serviceAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint96",
+        "name": "amount",
+        "type": "uint96"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "detailsHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "logDisclosure",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "policies",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "agentAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint96",
+        "name": "spendLimit",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "totalLimit",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "totalSpent",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint64",
+        "name": "expiresAt",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "detailsHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "active",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "policyCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "policyIds",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "agentAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint96",
+        "name": "spendLimit",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "totalLimit",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint64",
+        "name": "expiresAt",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "detailsHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "registerPolicy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "policyId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "revokePolicy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ShadowVault.Category",
+        "name": "category",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerDay",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDisclosuresPerWeek",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxUniqueServices",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint96",
+        "name": "maxSpendPerDay",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint8",
+        "name": "alertThresholdPct",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateBudget",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

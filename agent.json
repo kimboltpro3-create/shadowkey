@@ -1,0 +1,116 @@
+{
+  "agent_name": "ShadowKey Reputation Agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent that reads agent trust scores from the ShadowKey reputation engine and attests trusted agents on-chain via gasless transactions. Operates without human approval of individual attestations.",
+  "operator_wallet": "0x9a985E67069945c69174804E0037b1061B9414Ac",
+  "erc8004": {
+    "identity": "shadowkey-reputation-agent-v1",
+    "note": "ERC-8004 agent identity — operator wallet is the registered identity anchor"
+  },
+  "supported_tools": [
+    {
+      "name": "supabase_query",
+      "description": "Read agent trust scores from the ShadowKey reputation database",
+      "type": "data_api"
+    },
+    {
+      "name": "ethereum_transaction",
+      "description": "Submit on-chain attestations via ethers.js (gasPrice=0 on Status Network)",
+      "type": "blockchain"
+    },
+    {
+      "name": "status_network_rpc",
+      "description": "Connect to Status Network Sepolia RPC for gasless transaction submission",
+      "type": "rpc_endpoint"
+    },
+    {
+      "name": "shadowkey_sdk",
+      "description": "ShadowKey Agent SDK for vault access requests and status polling",
+      "type": "sdk",
+      "npm_package": "shadowkey-agent-sdk"
+    },
+    {
+      "name": "erc8128_signer",
+      "description": "RFC 9421 HTTP Message Signatures — signs each API request with Ethereum key",
+      "type": "auth_primitive"
+    }
+  ],
+  "tech_stack": [
+    "Node.js 18+",
+    "ethers.js v6",
+    "Solidity 0.8.24",
+    "Hardhat",
+    "Status Network Sepolia (Chain ID: 1660990954)",
+    "Base Sepolia (Chain ID: 84532)",
+    "TypeScript",
+    "React 18",
+    "Vite",
+    "Supabase"
+  ],
+  "compute_constraints": {
+    "max_rpc_calls_per_run": 20,
+    "max_gas_per_tx": 200000,
+    "gas_price": 0,
+    "max_retries_per_tx": 3,
+    "timeout_per_tx_ms": 30000,
+    "abort_on_consecutive_failures": 3
+  },
+  "task_categories": [
+    "agent_trust_attestation",
+    "reputation_computation",
+    "on_chain_verification",
+    "privacy_preserving_disclosure",
+    "vault_access_management"
+  ],
+  "decision_loop": {
+    "discover": "Read agent list and trust scores from Supabase reputation engine",
+    "plan": "Evaluate each agent against trust threshold (score >= 70 = TRUSTED)",
+    "execute": "Submit attest(agentAddress, trustScore) with gasPrice=0 to Status Network",
+    "verify": "Confirm transaction receipt and log explorer URL",
+    "submit": "Update agent log with all decisions and transaction proofs"
+  },
+  "safety_guardrails": [
+    "Validates agent address is non-zero before submitting transaction",
+    "Explicit gasLimit prevents runaway gas consumption",
+    "Trust threshold enforced at contract level (cannot be bypassed client-side)",
+    "Read-only Supabase access for score fetching (no write permissions)",
+    "Aborts full run on 3+ consecutive transaction failures",
+    "5-minute timestamp window on ERC-8128 signatures (prevents replay attacks)",
+    "Content-Digest header verifies request body integrity"
+  ],
+  "contracts": {
+    "attestation": {
+      "address": "0x0191d5ada56672507Fdb283AC59d45BDE08a53f8",
+      "network": "Status Network Sepolia",
+      "chain_id": 1660990954,
+      "explorer": "https://sepolia.explorer.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8"
+    },
+    "slice_gate": {
+      "network": "Base Sepolia",
+      "chain_id": 84532,
+      "source": "contracts/SliceShadowKeyGate.sol"
+    },
+    "shadow_vault": {
+      "address": "0xC739f98B438620A9326Ddb7548201Bcd78a3DBAd",
+      "network": "Base Mainnet",
+      "chain_id": 8453,
+      "explorer": "https://basescan.org/address/0xC739f98B438620A9326Ddb7548201Bcd78a3DBAd"
+    }
+  },
+  "demos": {
+    "reputation_agent": "https://shadowkey-ai.vercel.app/status-network",
+    "agent_checkout": "https://shadowkey-ai.vercel.app/slice",
+    "erc8128_auth": "https://shadowkey-ai.vercel.app/erc8128",
+    "live_ai_agent": "https://shadowkey-ai.vercel.app/agent-demo"
+  },
+  "devspot_manifest_version": "1.0",
+  "hackathon": "Synthesis Hackathon 2026 + PL_Genesis",
+  "tracks": [
+    "Protocol Labs — Let the Agent Cook",
+    "Protocol Labs — Agents With Receipts (ERC-8004)",
+    "Slice — ERC-8128",
+    "Slice — Future of Commerce",
+    "Slice — Product Hooks",
+    "Status Network — Gasless Attestations"
+  ]
+}

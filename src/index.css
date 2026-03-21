@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #f0f9ff;
+    color: #0c4a6e;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: #020817;
+    color: #f1f5f9;
+  }
+
+  html.light-mode {
+    color-scheme: light;
+  }
+
+  .light-mode body {
+    background-color: #f0f9ff;
+    color: #0c4a6e;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #7dd3fc;
+    border-radius: 2px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+
+  .light-mode ::-webkit-scrollbar-thumb {
+    background: #7dd3fc;
+  }
+
+  .light-mode ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
+
+@layer utilities {
+  .bg-base {
+    @apply bg-sky-50;
+  }
+
+  .dark .bg-base {
+    @apply bg-slate-950;
+  }
+
+  .bg-elevated {
+    @apply bg-white;
+  }
+
+  .dark .bg-elevated {
+    @apply bg-slate-900;
+  }
+
+  .bg-surface {
+    @apply bg-white;
+  }
+
+  .dark .bg-surface {
+    @apply bg-slate-900/60;
+  }
+
+  .border-base {
+    @apply border-sky-200;
+  }
+
+  .dark .border-base {
+    @apply border-slate-800/60;
+  }
+
+  .text-primary {
+    @apply text-sky-900;
+  }
+
+  .dark .text-primary {
+    @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-sky-700;
+  }
+
+  .dark .text-secondary {
+    @apply text-slate-400;
+  }
+
+  .text-tertiary {
+    @apply text-sky-600;
+  }
+
+  .dark .text-tertiary {
+    @apply text-slate-500;
+  }
+
+  .hover-bg {
+    @apply hover:bg-sky-100;
+  }
+
+  .dark .hover-bg {
+    @apply hover:bg-slate-800/40;
+  }
+
+  .light-mode .bg-base {
+    @apply bg-sky-50;
+  }
+
+  .light-mode .bg-elevated {
+    @apply bg-white;
+  }
+
+  .light-mode .bg-surface {
+    @apply bg-white;
+  }
+
+  .light-mode .border-base {
+    @apply border-sky-200;
+  }
+
+  .light-mode .text-primary {
+    @apply text-sky-900;
+  }
+
+  .light-mode .text-secondary {
+    @apply text-sky-700;
+  }
+
+  .light-mode .text-tertiary {
+    @apply text-sky-600;
+  }
+
+  .light-mode .hover-bg {
+    @apply hover:bg-sky-100;
+  }
+}

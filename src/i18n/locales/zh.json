@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "dashboard": "仪表板",
+    "vault": "保险库",
+    "policies": "策略",
+    "budget": "隐私预算",
+    "personas": "角色",
+    "deadManSwitch": "死人开关",
+    "forensics": "取证",
+    "reverseDisclosure": "反向披露",
+    "audit": "审计",
+    "consents": "同意收据",
+    "reputation": "代理声誉",
+    "demo": "演示",
+    "scenarios": "场景",
+    "agentDemo": "代理演示",
+    "sdkPlayground": "SDK 游乐场",
+    "settings": "设置"
+  },
+  "landing": {
+    "hero": {
+      "title": "您的数据。您的规则。",
+      "subtitle": "通过军用级加密和零知识架构控制您的数字身份",
+      "cta": "开始使用",
+      "learnMore": "了解更多"
+    },
+    "features": {
+      "title": "为什么选择 ShadowKey？",
+      "vault": {
+        "title": "加密保险库",
+        "description": "您的秘密在存储前在客户端加密"
+      },
+      "policies": {
+        "title": "智能策略",
+        "description": "细粒度控制谁访问什么数据"
+      },
+      "budget": {
+        "title": "隐私预算",
+        "description": "每个类别的速率限制和支出控制"
+      },
+      "forensics": {
+        "title": "取证审计",
+        "description": "使用加密收据跟踪每次披露"
+      }
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "step1": {
+        "title": "连接钱包",
+        "description": "使用 MetaMask 创建您的安全保险库"
+      },
+      "step2": {
+        "title": "存储秘密",
+        "description": "按类别添加加密数据"
+      },
+      "step3": {
+        "title": "创建策略",
+        "description": "定义谁可以访问什么"
+      },
+      "step4": {
+        "title": "保持安全",
+        "description": "实时监控所有活动"
+      }
+    },
+    "cta": {
+      "title": "准备好掌控一切了吗？",
+      "description": "加入数千人保护他们的数字身份",
+      "button": "立即开始"
+    }
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "subtitle": "您的隐私指挥中心",
+    "vaultStatus": {
+      "title": "保险库状态",
+      "active": "活跃",
+      "locked": "已锁定"
+    },
+    "stats": {
+      "secrets": "秘密",
+      "policies": "策略",
+      "disclosures": "披露",
+      "agents": "代理"
+    },
+    "recentActivity": {
+      "title": "最近活动",
+      "noActivity": "没有最近的活动"
+    },
+    "quickActions": {
+      "title": "快速操作",
+      "addSecret": "添加秘密",
+      "createPolicy": "创建策略",
+      "viewAudit": "查看审计日志",
+      "emergencyLockdown": "紧急锁定"
+    }
+  },
+  "vault": {
+    "title": "保险库",
+    "subtitle": "您的加密数据存储",
+    "categories": {
+      "all": "所有类别",
+      "payment": "支付",
+      "identity": "身份",
+      "credentials": "凭据",
+      "health": "健康",
+      "preferences": "偏好"
+    },
+    "addSecret": "添加秘密",
+    "noSecrets": "尚未存储秘密",
+    "secretAdded": "秘密添加成功",
+    "secretDeleted": "秘密删除成功"
+  },
+  "policies": {
+    "title": "策略",
+    "subtitle": "管理代理访问权限",
+    "createPolicy": "创建策略",
+    "noPolicies": "尚未创建策略",
+    "policyCreated": "策略创建成功",
+    "policyUpdated": "策略更新成功",
+    "status": {
+      "active": "活跃",
+      "inactive": "非活跃",
+      "expired": "已过期"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "自定义您的体验",
+    "language": {
+      "title": "语言",
+      "description": "选择您的首选语言"
+    },
+    "theme": {
+      "title": "主题",
+      "description": "在浅色和深色模式之间切换",
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "notifications": {
+      "title": "通知",
+      "description": "管理通知首选项"
+    },
+    "saved": "设置保存成功"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "confirm": "确认",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "walletConnected": "钱包已连接",
+    "walletDisconnected": "钱包已断开",
+    "pleaseConnectWallet": "请先连接您的钱包"
+  }
+}
