@@ -1,4 +1,4 @@
-/**
+﻿/**
  * gaslessAttest.cjs
  *
  * Demonstrates gasless transactions on Status Network Sepolia.
@@ -71,7 +71,7 @@ async function main() {
     const receipt = await tx.wait();
     console.log(`  Block:    ${receipt.blockNumber}`);
     console.log(`  Gas used: ${receipt.gasUsed.toString()} (gas price: 0)`);
-    console.log(`  Explorer: https://sepolia.explorer.status.network/tx/${tx.hash}\n`);
+    console.log(`  Explorer: https://sepoliascan.status.network/tx/${tx.hash}\n`);
 
     txHashes.push({ agent: agent.name, decision: agent.decision, score: agent.score, hash: tx.hash });
   }
@@ -80,7 +80,7 @@ async function main() {
   console.log(`Total attestations on-chain: ${count.toString()}`);
   console.log("\n=== TX Hashes for README ===");
   for (const t of txHashes) {
-    console.log(`${t.agent} (score ${t.score}, ${t.decision}): https://sepolia.explorer.status.network/tx/${t.hash}`);
+    console.log(`${t.agent} (score ${t.score}, ${t.decision}): https://sepoliascan.status.network/tx/${t.hash}`);
   }
 }
 

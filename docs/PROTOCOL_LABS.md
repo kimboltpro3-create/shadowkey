@@ -1,4 +1,4 @@
-# ShadowKey × Protocol Labs
+﻿# ShadowKey × Protocol Labs
 
 **Tracks:** Let the Agent Cook · Agents With Receipts (ERC-8004)
 **Prize Pool:** $4,000 (Let the Agent Cook) + $4,000 (Agents With Receipts) = $8,000 total
@@ -101,9 +101,9 @@ Run `npm run gasless:demo` to reproduce. Pre-run proofs:
 
 | Agent | Score | Decision | TX Hash | Gas Price |
 |-------|-------|----------|---------|-----------|
-| ShoppingAgent | 85 | TRUSTED | [0xae1c066c…](https://sepolia.explorer.status.network/tx/0xae1c066cf62a468f7ce626d91bcfa4cec2a30107e0ac26cc55570726c5386db7) | 0 Wei |
-| TravelAgent | 62 | CAUTIOUS | [0xe46cba7e…](https://sepolia.explorer.status.network/tx/0xe46cba7ea79be170ccbf5228a121131bb8b4c4eb5c2ddc589d9d4ee174dfd7f9) | 0 Wei |
-| ResearchAgent | 12 | BLOCKED | [0x964434b7…](https://sepolia.explorer.status.network/tx/0x964434b7ae6c14c8c28c106a0a588b6a10398b2b28ae9f7e8617681714f3bb0c) | 0 Wei |
+| ShoppingAgent | 85 | TRUSTED | [0xae1c066c…](https://sepoliascan.status.network/tx/0x2d876797c5c2a2768aec5bb142b337e669202ab4483eae9963515e9bdc16ad85) | 0 Wei |
+| TravelAgent | 62 | CAUTIOUS | [0xe46cba7e…](https://sepoliascan.status.network/tx/0x5dfc48d4a851d38a1a773c989858cc541a220cb12dde395f7122ea098522be91) | 0 Wei |
+| ResearchAgent | 12 | BLOCKED | [0x964434b7…](https://sepoliascan.status.network/tx/0x5e1eed02215b703d582abdd2678d420399eb0bfd0df8a4b2e2488ef7ec273bd4) | 0 Wei |
 
 ---
 
@@ -219,7 +219,7 @@ node scripts/gaslessAttest.cjs
 # [PLAN] TravelAgent: score=62 → CAUTIOUS
 # [PLAN] ResearchAgent: score=12 → BLOCKED
 # [EXECUTE] Attesting ShoppingAgent (gasPrice=0)...
-# [VERIFY] TX confirmed: 0xae1c066c... | https://sepolia.explorer.status.network/tx/...
+# [VERIFY] TX confirmed: 0xae1c066c... | https://sepoliascan.status.network/tx/...
 # ...
 # [SUBMIT] Run complete: 3/3 attestations confirmed. Total gas cost: $0.00
 ```

@@ -1,4 +1,4 @@
-require("@nomicfoundation/hardhat-ethers");
+﻿require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-chai-matchers");
 require("dotenv").config();
 
@@ -61,8 +61,8 @@ module.exports = {
         network: "statusNetworkSepolia",
         chainId: 1660990954,
         urls: {
-          apiURL: "https://sepolia.explorer.status.network/api",
-          browserURL: "https://sepolia.explorer.status.network",
+          apiURL: "https://sepoliascan.status.network/api",
+          browserURL: "https://sepoliascan.status.network",
         },
       },
     ],

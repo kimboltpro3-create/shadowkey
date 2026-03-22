@@ -1,4 +1,4 @@
-import { SecretCategory } from '../types';
+﻿import { SecretCategory } from '../types';
 
 export const CATEGORY_LABELS: Record<SecretCategory, string> = {
   payment: 'Payment Methods',
@@ -69,5 +69,5 @@ export const STATUS_NETWORK_SEPOLIA_CONFIG = {
   chainName: 'Status Network Sepolia',
   nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
   rpcUrls: ['https://public.sepolia.rpc.status.network'],
-  blockExplorerUrls: ['https://sepolia.explorer.status.network'],
+  blockExplorerUrls: ['https://sepoliascan.status.network'],
 };

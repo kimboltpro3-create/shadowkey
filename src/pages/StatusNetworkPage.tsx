@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import { Shield, Zap, CheckCircle, XCircle, AlertTriangle, ExternalLink, Copy, Bot, Activity } from 'lucide-react';
 import { getTrustLevel } from '../lib/agentReputation';
@@ -7,7 +7,7 @@ import AttestationABI from '../lib/ShadowKeyAttestationABI.json';
 
 const CONTRACT_ADDRESS = import.meta.env.VITE_ATTESTATION_CONTRACT_ADDRESS || '';
 const STATUS_RPC = 'https://public.sepolia.rpc.status.network';
-const EXPLORER = 'https://sepolia.explorer.status.network';
+const EXPLORER = 'https://sepoliascan.status.network';
 
 interface AgentDecision {
   name: string;
@@ -27,9 +27,9 @@ const DEMO_DECISIONS: AgentDecision[] = [
 
 // Static tx hashes from pre-run gaslessAttest.cjs — replace after running the script
 const STATIC_TX_HASHES: Record<string, string> = {
-  [DEMO_AGENT_ADDRESSES.shopping]: '0xae1c066cf62a468f7ce626d91bcfa4cec2a30107e0ac26cc55570726c5386db7',
-  [DEMO_AGENT_ADDRESSES.travel]:   '0xe46cba7ea79be170ccbf5228a121131bb8b4c4eb5c2ddc589d9d4ee174dfd7f9',
-  [DEMO_AGENT_ADDRESSES.research]: '0x964434b7ae6c14c8c28c106a0a588b6a10398b2b28ae9f7e8617681714f3bb0c',
+  [DEMO_AGENT_ADDRESSES.shopping]: '0x2d876797c5c2a2768aec5bb142b337e669202ab4483eae9963515e9bdc16ad85',
+  [DEMO_AGENT_ADDRESSES.travel]:   '0x5dfc48d4a851d38a1a773c989858cc541a220cb12dde395f7122ea098522be91',
+  [DEMO_AGENT_ADDRESSES.research]: '0x5e1eed02215b703d582abdd2678d420399eb0bfd0df8a4b2e2488ef7ec273bd4',
 };
 
 function DecisionBadge({ decision }: { decision: AgentDecision['decision'] }) {

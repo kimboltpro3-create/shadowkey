@@ -1,4 +1,4 @@
-const hre = require("hardhat");
+﻿const hre = require("hardhat");
 
 async function main() {
   const [deployer] = await hre.ethers.getSigners();
@@ -13,7 +13,7 @@ async function main() {
 
   const address = await contract.getAddress();
   console.log("\nShadowKeyAttestation deployed to:", address);
-  console.log("Explorer:", `https://sepolia.explorer.status.network/address/${address}`);
+  console.log("Explorer:", `https://sepoliascan.status.network/address/${address}`);
   console.log("\nAdd to .env:");
   console.log(`  VITE_ATTESTATION_CONTRACT_ADDRESS=${address}`);
   console.log(`  ATTESTATION_CONTRACT_ADDRESS=${address}`);

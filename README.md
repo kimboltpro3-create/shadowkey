@@ -1,4 +1,8 @@
-# ShadowKey
+﻿# ShadowKey
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kimboltpro3-create/shadowkey/main/logo.png" alt="ShadowKey Logo" width="400"/>
+</p>
 
 **Human-Controlled Privacy Vault for AI Agents**
 
@@ -589,7 +593,7 @@ Supabase   vs ≥70     on Status  receipt   + TX proofs
 - **ERC-8004 Equivalent:** `ShadowKeyAttestation.sol` = reputation registry, `SliceShadowKeyGate.sol` = validation registry
 - **Tool Use:** Supabase API + ethers.js + Status Network RPC + ShadowKey SDK + ERC-8128 signer
 - **Safety:** zero-address validation, explicit gas limits, sequential tx confirmation, read-only data access
-- **Gasless TX proofs** (gasPrice=0): [ShoppingAgent](https://sepolia.explorer.status.network/tx/0xae1c066cf62a468f7ce626d91bcfa4cec2a30107e0ac26cc55570726c5386db7) · [TravelAgent](https://sepolia.explorer.status.network/tx/0xe46cba7ea79be170ccbf5228a121131bb8b4c4eb5c2ddc589d9d4ee174dfd7f9) · [ResearchAgent](https://sepolia.explorer.status.network/tx/0x964434b7ae6c14c8c28c106a0a588b6a10398b2b28ae9f7e8617681714f3bb0c)
+- **Gasless TX proofs** (gasPrice=0): [ShoppingAgent](https://sepoliascan.status.network/tx/0x2d876797c5c2a2768aec5bb142b337e669202ab4483eae9963515e9bdc16ad85) · [TravelAgent](https://sepoliascan.status.network/tx/0x5dfc48d4a851d38a1a773c989858cc541a220cb12dde395f7122ea098522be91) · [ResearchAgent](https://sepoliascan.status.network/tx/0x5e1eed02215b703d582abdd2678d420399eb0bfd0df8a4b2e2488ef7ec273bd4)
 
 ---
 

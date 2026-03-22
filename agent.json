@@ -1,4 +1,4 @@
-{
+﻿{
   "agent_name": "ShadowKey Reputation Agent",
   "version": "1.0.0",
   "description": "Autonomous AI agent that reads agent trust scores from the ShadowKey reputation engine and attests trusted agents on-chain via gasless transactions. Operates without human approval of individual attestations.",
@@ -83,7 +83,7 @@
       "address": "0x0191d5ada56672507Fdb283AC59d45BDE08a53f8",
       "network": "Status Network Sepolia",
       "chain_id": 1660990954,
-      "explorer": "https://sepolia.explorer.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8"
+      "explorer": "https://sepoliascan.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8"
     },
     "slice_gate": {
       "network": "Base Sepolia",

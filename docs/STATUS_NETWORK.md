@@ -22,7 +22,7 @@ No human approves individual attestations. The agent decides.
 |-------|-------|
 | **Address** | `0x0191d5ada56672507Fdb283AC59d45BDE08a53f8` |
 | **Chain** | Status Network Sepolia (Chain ID: 1660990954) |
-| **Explorer** | [sepolia.explorer.status.network/address/0x0191d…](https://sepolia.explorer.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8) |
+| **Explorer** | [sepoliascan.status.network/address/0x0191d…](https://sepoliascan.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8) |
 | **Gas Price** | 0 (gasless at protocol level) |
 
 ### Contract Interface
@@ -51,9 +51,9 @@ All three attestations below have **gasPrice = 0** — verified on the Status Ne
 
 | Agent | Trust Score | Decision | Transaction |
 |-------|-------------|----------|-------------|
-| ShoppingAgent | 85 / 100 | TRUSTED ✅ | [0xae1c066c…](https://sepolia.explorer.status.network/tx/0xae1c066cf62a468f7ce626d91bcfa4cec2a30107e0ac26cc55570726c5386db7) |
-| TravelAgent | 62 / 100 | CAUTIOUS ⚠️ | [0xe46cba7e…](https://sepolia.explorer.status.network/tx/0xe46cba7ea79be170ccbf5228a121131bb8b4c4eb5c2ddc589d9d4ee174dfd7f9) |
-| ResearchAgent | 12 / 100 | BLOCKED ❌ | [0x964434b7…](https://sepolia.explorer.status.network/tx/0x964434b7ae6c14c8c28c106a0a588b6a10398b2b28ae9f7e8617681714f3bb0c) |
+| ShoppingAgent | 85 / 100 | TRUSTED ✅ | [0x2d876797…](https://sepoliascan.status.network/tx/0x2d876797c5c2a2768aec5bb142b337e669202ab4483eae9963515e9bdc16ad85) |
+| TravelAgent | 62 / 100 | CAUTIOUS ⚠️ | [0x5dfc48d4…](https://sepoliascan.status.network/tx/0x5dfc48d4a851d38a1a773c989858cc541a220cb12dde395f7122ea098522be91) |
+| ResearchAgent | 12 / 100 | BLOCKED ❌ | [0x5e1eed02…](https://sepoliascan.status.network/tx/0x5e1eed02215b703d582abdd2678d420399eb0bfd0df8a4b2e2488ef7ec273bd4) |
 
 > Open any transaction → **Gas Price** column shows `0 Wei` in the Status Network Sepolia explorer.
 
