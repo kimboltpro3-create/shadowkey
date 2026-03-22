@@ -23,6 +23,7 @@ No human approves individual attestations. The agent decides.
 | **Address** | `0x0191d5ada56672507Fdb283AC59d45BDE08a53f8` |
 | **Chain** | Status Network Sepolia (Chain ID: 1660990954) |
 | **Explorer** | [sepoliascan.status.network/address/0x0191d…](https://sepoliascan.status.network/address/0x0191d5ada56672507Fdb283AC59d45BDE08a53f8) |
+| **Verified** | ✅ Source code verified on sepoliascan |
 | **Gas Price** | 0 (gasless at protocol level) |
 
 ### Contract Interface
@@ -56,6 +57,52 @@ All three attestations below have **gasPrice = 0** — verified on the Status Ne
 | ResearchAgent | 12 / 100 | BLOCKED ❌ | [0x5e1eed02…](https://sepoliascan.status.network/tx/0x5e1eed02215b703d582abdd2678d420399eb0bfd0df8a4b2e2488ef7ec273bd4) |
 
 > Open any transaction → **Gas Price** column shows `0 Wei` in the Status Network Sepolia explorer.
+
+---
+
+## How the Contract Connects to ShadowKey
+
+```
+ShadowKey App (React frontend)
+        │
+        │  User grants/denies AI agent requests
+        │  (e.g. ShoppingAgent wants to spend $200)
+        ▼
+ShadowKey Reputation Engine  ─── src/lib/agentReputation.ts
+        │
+        │  Tracks per-agent history:
+        │    approved requests → score up
+        │    budget violations → score down
+        │    denied requests  → score down
+        │
+        │  getTrustLevel() returns score 0–100
+        ▼
+gaslessAttest.cjs  (Autonomous Reputation Agent)
+        │
+        │  1. Reads each agent's current trust score
+        │  2. Decides: score ≥ 70 → attest as TRUSTED
+        │  3. Submits attest(agentAddress, trustScore)
+        │     with gasPrice=0, gasLimit=200000
+        ▼
+ShadowKeyAttestation.sol  ─── deployed on Status Network Sepolia
+        │
+        │  Stores on-chain: agentAddress → {trustScore, trusted, timestamp}
+        │  Emits AgentAttested / AgentRevoked events
+        │
+        ▼
+sepoliascan.status.network  ─── public verifiable record
+        │
+        │  Anyone can call isTrusted(agentAddress) → bool
+        │  or getAttestation(agentAddress) → full struct
+        ▼
+StatusNetworkPage.tsx  (Demo UI)
+        │
+        │  Reads live attestations from the contract
+        │  Displays trust scores + explorer TX links
+        │  Lets judges connect MetaMask and run live attestations
+```
+
+**In plain terms:** Every time a user interacts with an AI agent inside ShadowKey (approving/denying a request), the reputation engine updates that agent's trust score. The attestation agent then reads those scores and writes a permanent, tamper-proof trust record on Status Network Sepolia — at zero gas cost. The frontend reads back from the contract so judges can verify every decision is anchored on-chain.
 
 ---
 
